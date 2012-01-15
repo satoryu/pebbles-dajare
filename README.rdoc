@@ -12,3 +12,7 @@ This gem allows developers to generate puns.
   
   'ありがとうございます。'.dajarize #=> 'ありがとうござい益若つばさ。'
 
+= Current Status by Travis CI
+
+{<img src="https://secure.travis-ci.org/satoryu/pebbles-dajare.png" />}[http://travis-ci.org/satoryu/pebbles-dajare]
+
