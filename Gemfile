@@ -3,6 +3,7 @@ source "http://rubygems.org"
 gem 'google_suggest'
 
 group :development, :test do
+  gem 'rake'
   gem 'rspec', '~> 2.8.0'
 end
 
