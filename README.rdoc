@@ -1,0 +1,14 @@
+= What's This ?
+Dajare means pun in Japanese. 
+This gem allows developers to generate puns. 
+
+= Installation
+  gem install pebbles-dajare
+
+= Usage
+  require 'pebbles/dajare'
+  
+  Pebbles::Dajare.generate_dajare 'ありがとうございます。' #=> 'ありがとうござい益若つばさ。'
+  
+  'ありがとうございます。'.dajarize #=> 'ありがとうござい益若つばさ。'
+
