@@ -1,8 +1,8 @@
 require 'google_suggest'
+require 'pebbles/dajare/version'
 
 module Pebbles
   module Dajare
-    VERSION = '0.0.1'
 
     def generate_dajare(phrase, degree=2)
       components = phrase.scan(/./)
