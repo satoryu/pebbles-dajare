@@ -18,6 +18,14 @@ module Pebbles
       return dajares
     end
 
+    def dajarize(degree=2)
+      Pebbles::Dajare.generate_dajare(self.to_s, degree)
+    end
+
     module_function :generate_dajare
   end
+end
+
+class String
+  include Pebbles::Dajare
 end

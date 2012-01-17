@@ -7,8 +7,13 @@ describe Pebbles::Dajare do
       {'suggestion' => '益若つばさ'}
     ])
   end
-  
-  subject { Pebbles::Dajare.generate_dajare 'ありがとうございます' }
-  its(:shift) { should == 'ありがとうござい益若つばさ' }
+  context ".generate_dajare" do
+    subject { Pebbles::Dajare.generate_dajare 'ありがとうございます' }
+    its(:shift) { should == 'ありがとうござい益若つばさ' }
+  end
+  context "String#dajarize" do
+    subject { 'ありがとうございます'.dajarize }
+    its(:shift) { should == 'ありがとうござい益若つばさ' }
+  end
 
 end
