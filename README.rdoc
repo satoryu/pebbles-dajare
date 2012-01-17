@@ -16,6 +16,12 @@ This gem allows developers to generate puns.
 
 {<img src="https://secure.travis-ci.org/satoryu/pebbles-dajare.png" />}[http://travis-ci.org/satoryu/pebbles-dajare]
 
+= Donation
+
+A donation would move forward this project and make my family happy. 
+
+{<img alt='Click here to lend your support to: pebbles-dajare and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/16591.png?skin_name=chrome' border='0' />}[http://www.pledgie.com/campaigns/16591]
+
 
 = LICENSE
 
