@@ -8,9 +8,9 @@ This gem allows developers to generate puns.
 = Usage
   require 'pebbles/dajare'
   
-  Pebbles::Dajare.generate_dajare 'ありがとうございます。' #=> 'ありがとうござい益若つばさ。'
+  Pebbles::Dajare.generate_dajare 'ありがとうございます' #=> 'ありがとうござい舛添要一'
   
-  'ありがとうございます。'.dajarize #=> 'ありがとうござい益若つばさ。'
+  'ありがとうございます'.dajarize #=> 'ありがとうござい舛添要一'
 
 = Current Status by Travis CI
 
