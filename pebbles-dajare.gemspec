@@ -22,5 +22,5 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   s.add_development_dependency "rspec", '>= 2'
-  s.add_runtime_dependency "google_suggest", '~> 0.1.0'
+  s.add_runtime_dependency "google_suggest", '~> 1.0.0'
 end
