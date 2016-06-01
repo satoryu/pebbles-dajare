@@ -13,7 +13,7 @@ module Pebbles
       results = GoogleSuggest.suggest_for(src_dajare)
 
       dajares = results.map do |result|
-        prefix + result['suggestion'].split(' ').shift
+        prefix + result.split(' ').shift
       end
       return dajares
     end
