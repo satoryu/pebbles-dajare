@@ -8,13 +8,13 @@ describe Pebbles::Dajare do
     ])
   end
 
-  context ".generate_dajare" do
+  describe ".generate_dajare" do
     subject { Pebbles::Dajare.generate_dajare 'ありがとうございます' }
 
     its(:shift) { should == 'ありがとうござい舛添要一' }
   end
 
-  context "String#dajarize" do
+  describe "String#dajarize" do
     subject { 'ありがとうございます'.dajarize }
 
     its(:shift) { should == 'ありがとうござい舛添要一' }
