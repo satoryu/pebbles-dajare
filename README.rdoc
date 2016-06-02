@@ -12,6 +12,11 @@ This gem allows developers to generate puns.
   
   'ありがとうございます'.dajarize #=> 'ありがとうござい舛添要一'
 
+== Options
+
+[+degree+] The length of suffix of a given phrase used as an argument of +GoogleSuggest.suggest_for+
+[+region+] The region of the endpoint of Google Suggest API
+
 = Current Status by Travis CI
 
 {<img src="https://secure.travis-ci.org/satoryu/pebbles-dajare.png" />}[http://travis-ci.org/satoryu/pebbles-dajare]
