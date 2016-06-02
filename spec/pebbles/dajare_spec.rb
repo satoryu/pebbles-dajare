@@ -1,9 +1,11 @@
-# encoding: utf-8
 require 'pebbles/dajare'
 
 describe Pebbles::Dajare do
+  let(:options) { { region: 'jp' } }
+  let(:keyword) { 'ます' }
+
   before do
-    GoogleSuggest.stub(:suggest_for).with('ます').and_return([
+    GoogleSuggest.stub(:suggest_for).with(keyword, options).and_return([
       '舛添要一'
     ])
   end

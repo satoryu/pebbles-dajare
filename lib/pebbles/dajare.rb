@@ -4,13 +4,13 @@ require 'pebbles/dajare/version'
 module Pebbles
   module Dajare
 
-    def generate_dajare(phrase, degree=2)
+    def generate_dajare(phrase, degree: 2, region: 'jp')
       components = phrase.scan(/./)
 
       prefix = components[0..-(degree+1)].join
       src_dajare = components[-degree..-1].join
 
-      results = GoogleSuggest.suggest_for(src_dajare)
+      results = GoogleSuggest.suggest_for(src_dajare, region: region)
 
       dajares = results.map do |result|
         prefix + result.split(' ').shift
@@ -18,8 +18,8 @@ module Pebbles
       return dajares
     end
 
-    def dajarize(degree=2)
-      Pebbles::Dajare.generate_dajare(self.to_s, degree)
+    def dajarize(degree: 2, region: 'jp')
+      Pebbles::Dajare.generate_dajare(self.to_s, degree: degree, region: region)
     end
 
     module_function :generate_dajare
