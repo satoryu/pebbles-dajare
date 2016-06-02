@@ -14,6 +14,14 @@ describe Pebbles::Dajare do
     subject { Pebbles::Dajare.generate_dajare 'ありがとうございます' }
 
     its(:shift) { should == 'ありがとうござい舛添要一' }
+
+    context 'Giving degree option' do
+      let(:keyword) { 'います' }
+
+      subject { Pebbles::Dajare.generate_dajare('ありがとうございます', degree: 3) }
+
+      its(:shift) { should == 'ありがとうござ舛添要一' }
+    end
   end
 
   describe "String#dajarize" do
