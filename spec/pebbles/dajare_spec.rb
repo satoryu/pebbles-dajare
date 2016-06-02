@@ -22,6 +22,13 @@ describe Pebbles::Dajare do
 
       its(:shift) { should == 'ありがとうござ舛添要一' }
     end
+    context 'Giving region option' do
+      let(:options) { { region: 'us' } }
+
+      subject { Pebbles::Dajare.generate_dajare('ありがとうございます', region: 'us') }
+
+      its(:shift) { should == 'ありがとうござい舛添要一' }
+    end
   end
 
   describe "String#dajarize" do
