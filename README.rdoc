@@ -1,9 +1,24 @@
-= What's This ?
+= Pebbles::Dajare
+
+{<img src="https://secure.travis-ci.org/satoryu/pebbles-dajare.png" />}[http://travis-ci.org/satoryu/pebbles-dajare]
+{<img alt='Click here to lend your support to: pebbles-dajare and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/16591.png?skin_name=chrome' border='0' />}[http://www.pledgie.com/campaigns/16591]
+
 Dajare means pun in Japanese. 
 This gem allows developers to generate puns. 
 
 = Installation
-  gem install pebbles-dajare
+
+Add this line to your application's Gemfile:
+
+  gem 'pebbles-dajare'
+
+And then execute:
+
+  $ bundle install
+
+Or install it yourself as:
+
+  $ gem install pebbles-dajare
 
 = Usage
   require 'pebbles/dajare'
@@ -16,17 +31,6 @@ This gem allows developers to generate puns.
 
 [+degree+] The length of suffix of a given phrase used as an argument of +GoogleSuggest.suggest_for+
 [+region+] The region of the endpoint of Google Suggest API
-
-= Current Status by Travis CI
-
-{<img src="https://secure.travis-ci.org/satoryu/pebbles-dajare.png" />}[http://travis-ci.org/satoryu/pebbles-dajare]
-
-= Donation
-
-A donation would move forward this project and make my family happy. 
-
-{<img alt='Click here to lend your support to: pebbles-dajare and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/16591.png?skin_name=chrome' border='0' />}[http://www.pledgie.com/campaigns/16591]
-
 
 = LICENSE
 
