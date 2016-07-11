@@ -13,39 +13,27 @@ describe Pebbles::Dajare do
   describe ".generate_dajare" do
     subject { Pebbles::Dajare.generate_dajare 'ありがとうございます' }
 
-    describe '#shift' do
-      subject { super().shift }
-      it { is_expected.to eq('ありがとうござい舛添要一') }
-    end
+    it { is_expected.to match_array(%w[ありがとうござい舛添要一]) }
 
     context 'Giving degree option' do
       let(:keyword) { 'います' }
 
       subject { Pebbles::Dajare.generate_dajare('ありがとうございます', degree: 3) }
 
-      describe '#shift' do
-        subject { super().shift }
-        it { is_expected.to eq('ありがとうござ舛添要一') }
-      end
+      it { is_expected.to match_array(%w[ありがとうござ舛添要一]) }
     end
     context 'Giving region option' do
       let(:options) { { region: 'us' } }
 
       subject { Pebbles::Dajare.generate_dajare('ありがとうございます', region: 'us') }
 
-      describe '#shift' do
-        subject { super().shift }
-        it { is_expected.to eq('ありがとうござい舛添要一') }
-      end
+      it { is_expected.to match_array(%w[ありがとうござい舛添要一]) }
     end
   end
 
   describe "String#dajarize" do
     subject { 'ありがとうございます'.dajarize }
 
-    describe '#shift' do
-      subject { super().shift }
-      it { is_expected.to eq('ありがとうござい舛添要一') }
-    end
+    it { is_expected.to match_array(%w[ありがとうござい舛添要一]) }
   end
 end
