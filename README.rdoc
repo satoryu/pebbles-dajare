@@ -1,7 +1,6 @@
 = Pebbles::Dajare
 
 {<img src="https://secure.travis-ci.org/satoryu/pebbles-dajare.png" />}[http://travis-ci.org/satoryu/pebbles-dajare]
-{<img alt='Click here to lend your support to: pebbles-dajare and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/16591.png?skin_name=chrome' border='0' />}[http://www.pledgie.com/campaigns/16591]
 
 Dajare means pun in Japanese. 
 This gem allows developers to generate puns. 
