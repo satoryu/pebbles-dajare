@@ -8,7 +8,8 @@ Gem::Specification.new do |s|
   s.email       = ['satoryu.1981@gmail.com']
   s.homepage    = 'https://github.com/satoryu/pebbles-dajare'
   s.summary     = 'a gem to generate dajare'
-  s.description = <<-DESC
+  s.description = <<~DESC
+    A gem provides a class for developers to gemerate dajares.
   DESC
 
   s.rubyforge_project = 'pebbles-dajare'
@@ -18,8 +19,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = ['lib']
 
-  # specify any dependencies here; for example:
   s.add_runtime_dependency 'google_suggest', '~> 1.0.0'
-  s.add_development_dependency 'rake', '~> 11.2.2'
-  s.add_development_dependency 'rspec', '~> 3.5.0'
+  s.add_development_dependency 'rake', '~> 12.3.2'
+  s.add_development_dependency 'rspec', '~> 3.8.0'
 end
