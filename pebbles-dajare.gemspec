@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   DESC
 
   s.rubyforge_project = 'pebbles-dajare'
-  s.required_ruby_version = '>= 2.2'
+  s.required_ruby_version = '>= 2.5'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
